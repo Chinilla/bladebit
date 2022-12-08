@@ -178,7 +178,7 @@ jobs:
     runs-on: [macOS, ARM64]
     steps:
       - name: Cleanup Environment
-        uses: Chia-Network/actions/clean-workspace@main
+        uses: Chinilla/actions/clean-workspace@main
 
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -207,7 +207,7 @@ jobs:
     runs-on: macOS-11
     steps:
       - name: Cleanup Environment
-        uses: Chia-Network/actions/clean-workspace@main
+        uses: Chinilla/actions/clean-workspace@main
 
       - name: Checkout Repo
         uses: actions/checkout@v3

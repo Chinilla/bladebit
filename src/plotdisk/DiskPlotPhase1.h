@@ -1,7 +1,7 @@
 #pragma once
 #include "DiskPlotContext.h"
 #include "util/Log.h"
-#include "ChiaConsts.h"
+#include "ChinillaConsts.h"
 
 class DiskPlotPhase1
 {   

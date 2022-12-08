@@ -1,5 +1,5 @@
 #include "io/FileStream.h"
-#include "ChiaConsts.h"
+#include "ChinillaConsts.h"
 #include "util/Util.h"
 #include "util/Log.h"
 #include "util/CliParser.h"
