@@ -1,7 +1,7 @@
 #pragma once
 
 #ifndef BLADEBIT_VERSION_MAJ
-    #define BLADEBIT_VERSION_MAJ    0
+    #define BLADEBIT_VERSION_MAJ    2
 #endif
 
 #ifndef BLADEBIT_VERSION_MIN
@@ -9,15 +9,15 @@
 #endif
 
 #ifndef BLADEBIT_VERSION_REV
-    #define BLADEBIT_VERSION_REV    0
+    #define BLADEBIT_VERSION_REV    1
 #endif
 
 #ifndef BLADEBIT_VERSION_SUFFIX
-    #define BLADEBIT_VERSION_SUFFIX "-dev"
+    #define BLADEBIT_VERSION_SUFFIX ""
 #endif
 
 #ifndef BLADEBIT_GIT_COMMIT
-    #define BLADEBIT_GIT_COMMIT     "unknown"
+    #define BLADEBIT_GIT_COMMIT     "a60f4406af04746c7a133d436a136f8a026f3aca"
 #endif
 
 // Record compiler version
