@@ -24,22 +24,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-
           BB_VERSION=$(basename $GITHUB_REF)
           BB_VERSION=${BB_VERSION:1}
           echo "Release Version: $BB_VERSION"
-
           artifacts=(
             bladebit-v${BB_VERSION}-ubuntu-x86-64.tar.gz
             bladebit-v${BB_VERSION}-centos-x86-64.tar.gz
             bladebit-v${BB_VERSION}-ubuntu-arm64.tar.gz
             bladebit-v${BB_VERSION}-centos-arm64.tar.gz
             bladebit-v${BB_VERSION}-windows-x86-64.zip
+            bladebit-v${BB_VERSION}-macos-arm64.tar.gz
             bladebit-v${BB_VERSION}-macos-x86-64.tar.gz
           )
-
           mkdir -p bin
-
           for artifact_name in "${artifacts[@]}"; do
             
             echo "Fetching $artifact_name"
@@ -51,7 +48,6 @@ jobs:
               >&2 echo "Failed to download artifact"
               exit 1 
             fi
-
             unzip -d bin "bin/${artifact_name}.zip"
             
             # Upload artifact to release
